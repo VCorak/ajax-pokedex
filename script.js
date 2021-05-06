@@ -6,9 +6,11 @@ console.log(getRandomPoke(1, 1118))
 
 function getInputValue() {
     document.getElementById("button-addon1").addEventListener('click', () => {
-        let input = +document.getElementById("input-id").value;
+        let input = +document.getElementById("input-id").value || document.getElementById("input-id").value;
         fetchPokemon();
+        console.log(input);
     })}
+getInputValue();
 
         const fetchPokemon = async () => {
             try {
@@ -19,5 +21,5 @@ function getInputValue() {
                 console.log(error)
             }
         }
-getInputValue();
+
 
