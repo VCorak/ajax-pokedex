@@ -13,7 +13,11 @@ const getPokemon = async term => {
     document.getElementById('image').setAttribute('src', pokemon.sprites.other.dream_world.front_default )
     document.getElementById('pokemon_name').innerHTML = pokemon.name.toUpperCase();
     document.getElementById('pokemon_id').innerHTML = `ID: ${pokemon.id}`;
-    document.getElementById('pokemon_moves').innerHTML = "";
+    document.getElementById('pokemon_moves').innerHTML = 'MOVES: '
+        + pokemon.moves[0].move.name + ', '
+        + pokemon.moves[1].move.name + ', '
+        + pokemon.moves[2].move.name + ', '
+        + pokemon.moves[3].move.name;
     document.getElementById('pokemon_type').innerHTML = 'TYPE: ' + pokemon.types.map((type) => type.type.name).join(', ');
 }
 
