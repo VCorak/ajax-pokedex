@@ -6,7 +6,7 @@
 
 body {
     width: 100vw;
-    heigh: 100vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,27 +17,65 @@ body {
     height: 500px;
 } */
 
- #image {
-     width: 80%;
+ img {
+     width: 50%;
      padding: 60px;
  }
 
- .search_container {
+ .search-container {
      display: flex;
      margin: 10px;
      width: 80%;
  }
+
  input:focus {
      border: 1px solid #22CBA8;
      box-shadow: none!important;
  }
 
- #button-addon1 {
+ .btn-outline-secondary {
      border: none;
-     padding-bottom: 10px 25px;
+     padding-bottom: 25px;
      border-radius: 0 5px 5px 0;
      background-color: #22CBA8;
      color: #fff;
      margin-left: -15px;
      cursor: pointer;
+ }
+
+ .flex-center {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     min-height: 100vh;
+     padding: 30px 15px;
+     background-color: lightblue;
+     color: white;
+ }
+
+ .card {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     background-color: transparent;
+ }
+
+ .image-container {
+     position: relative;
+     z-index: 2;
+     border-radius: 50%;
+     text-align: center;
+ }
+
+ .card-body {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 100px 30px 60px;
+     border-radius: 10px;
+     background-color: #fff;
+     width: 100%;
+     margin-top: -150px;
+     box-shadow: 0 0 8px rgba(0,0,0,0.3);
  }
