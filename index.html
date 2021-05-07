@@ -5,7 +5,8 @@
     <meta charset="UTF-8" />
     <title>Pokedex</title>
 
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -14,6 +15,7 @@
     <header>
         <h1>Pokedex</h1>
     </header>
+    <div class="container">
     <main class="container flex-center">
         <div class="search-container col-md-5 col-sm-5">
         <div class="input-group mb-3">
@@ -22,27 +24,32 @@
         </div>
         </div>
 
-
-
-
         <div class="card">
             <div class="image-container">
                 <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png" class="card-img-top" id="image" alt="..." srcset="">
             </div>
-                <div class="card-body">
-                <h5 class="card-title"id="pokemon_name">Name</h5>
-                <p class="card-text" id="pokemon_id">ID</p>
-                <p class="card-text" id="pokemon_abilities">Awesome pokemon abilities.</p>
 
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item 1" id="pokemon_moves" >Moves</li>
-                <li class="list-group-item 2" id="pokemon_type">Type</li>
-                <li class="list-group-item 3" id="pokemon_evolution">Evolution</li>
-            </ul>
-                </div>
+<div class="detail-container">
+<div class="title-container">
+        <h3 class="name text-center" id="pokemon_name">Name</h3>
+        <h3 class="id text-center"  id="pokemon_id">ID</h3>
+</div>
+
+        <hr class="separator">
+        <div class="stats text-center">
+            <p class="card-text" id="pokemon_abilities">Awesome pokemon abilities.</p>
+            <p class="card-text" id="pokemon_moves">Moves</p>
+            <p class="card-text" id="pokemon_evolution">Evolution</p>
+        </div>
+
+</div>
+
 
         </div>
+
+
     </main>
+    </div>
 
 
 <script src="script.js"></script>

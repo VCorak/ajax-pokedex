@@ -1,4 +1,4 @@
- /** {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,20 +11,25 @@ body {
     justify-content: center;
     align-items: center;
 }
+*/
+
 
 .container {
     width: 800px;
     height: 500px;
-} */
+}
 
- img {
-     width: 50%;
-     padding: 60px;
+* {
+    font-family: 'Press Start 2P', cursive;
+}
+ header {
+     text-align: center;
+     margin-top: 20px;
  }
 
  .search-container {
      display: flex;
-     margin: 10px;
+     margin-top: 100px;
      width: 80%;
  }
 
@@ -37,20 +42,27 @@ body {
      border: none;
      padding-bottom: 25px;
      border-radius: 0 5px 5px 0;
-     background-color: #22CBA8;
      color: #fff;
      margin-left: -15px;
      cursor: pointer;
+     background: linear-gradient(top, #307bfb 0%, #0530e5 80%);
+     background: -webkit-linear-gradient(top, #307bfb 0%, #0530e5 80%);
+     background: -moz-linear-gradient(top, #307bfb 0%, #0530e5 80%);
+     background: -o-linear-gradient(top, #307bfb 0%, #0530e5 80%);
+     box-shadow: -3px 2px #001c91;
+
  }
 
  .flex-center {
+     width: 500px;
+     height: 300px;
      display: flex;
      flex-direction: column;
      align-items: center;
      justify-content: center;
      min-height: 100vh;
      padding: 30px 15px;
-     background-color: lightblue;
+     background-color: transparent;
      color: white;
  }
 
@@ -59,6 +71,7 @@ body {
      flex-direction: column;
      align-items: center;
      background-color: transparent;
+     border: none;
  }
 
  .image-container {
@@ -66,6 +79,11 @@ body {
      z-index: 2;
      border-radius: 50%;
      text-align: center;
+ }
+
+ img {
+     width: 20%;
+     padding: 60px;
  }
 
  .card-body {
@@ -78,4 +96,26 @@ body {
      width: 100%;
      margin-top: -150px;
      box-shadow: 0 0 8px rgba(0,0,0,0.3);
+ }
+
+ .detail-container {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding:100px 30px 60px;
+     border-radius: 10px;
+     background-color: red;
+     width: 100%;
+     margin-top: -150px;
+     box-shadow: 0 0 8px rgba(0,0,0,0.3);
+ }
+
+ .separator {
+     border-color: #6EECB7 !important;
+     border-width: 10px;
+     border-radius: 5px;
+ }
+
+ .stats text-center {
+     font-size: small;
  }
